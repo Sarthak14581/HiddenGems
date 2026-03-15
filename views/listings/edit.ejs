@@ -2,7 +2,7 @@
 
 <div class="row mt-3">
   <div class="col-8 offset-2">
-    <h3>Edit your Listing</h3>
+    <h3>Edit Your Hidden Spot</h3>
     <form
       action="/listings/<%= listing._id %>?_method=PUT"
       method="post"
@@ -11,7 +11,7 @@
       enctype="multipart/form-data"
     >
       <div class="mb-3">
-        <label for="title" class="form-label">Title</label>
+        <label for="title" class="form-label">Hidden Spot Name</label>
         <input
           type="text"
           name="listing[title]"
@@ -19,11 +19,13 @@
           class="form-control"
           required
         />
-        <div class="valid-feedback">Title looks good!</div>
+        <div class="valid-feedback">Spot name looks good!</div>
       </div>
 
       <div class="mb-3">
-        <label for="description" class="form-label">Description</label>
+        <label for="description" class="form-label"
+          >About this hidden location</label
+        >
         <textarea
           type="text"
           name="listing[description]"
@@ -32,23 +34,25 @@
         >
  <%= listing.description %> </textarea
         >
-        <div class="invalid-feedback">Please enter a short description</div>
+        <div class="invalid-feedback">
+          Please enter a short travel description
+        </div>
       </div>
 
       <div class="mb-3">
-        Original Listing Image
+        Current Spot Photo
         <br />
-        <img src="<%= originalImageUrl %>" alt="" />
+        <img src="<%= originalImageUrl %>" alt="" height="500px"/>
       </div>
 
       <div class="mb-3">
-        <label for="image" class="form-label">Upload New Image</label>
+        <label for="image" class="form-label">Upload New Spot Photo</label>
         <input type="file" name="listing[image]" class="form-control" />
       </div>
 
       <div class="row">
         <div class="mb-3 col-md-4">
-          <label for="price" class="form-label">Price</label>
+          <label for="price" class="form-label">Estimated Travel Cost</label>
           <input
             type="number"
             name="listing[price]"
@@ -56,7 +60,9 @@
             class="form-control"
             required
           />
-          <div class="invalid-feedback">Please enter a valid price</div>
+          <div class="invalid-feedback">
+            Please enter a valid estimated cost
+          </div>
         </div>
 
         <div class="mb-3 col-md-8">
@@ -72,7 +78,7 @@
         </div>
       </div>
       <div class="mb-3">
-        <label for="location" class="form-label">Location</label>
+        <label for="location" class="form-label">City / Region</label>
         <input
           type="text"
           name="listing[location]"
@@ -80,10 +86,10 @@
           class="form-control"
           required
         />
-        <div class="invalid-feedback">Please enter Location</div>
+        <div class="invalid-feedback">Please enter city or region</div>
       </div>
 
-      <button class="btn edit-btn btn-dark mt-3 m-3">Edit</button>
+      <button class="btn edit-btn btn-dark mt-3 m-3">Update Spot</button>
     </form>
   </div>
 </div>

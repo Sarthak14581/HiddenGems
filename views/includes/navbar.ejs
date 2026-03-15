@@ -37,7 +37,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link" href="/listings">Expolore</a>
+        <a class="nav-link" href="/listings">Discover Gems</a>
       </div>
 
       <div class="navbar-nav ms-auto">
@@ -45,7 +45,7 @@
           <input
             class="form-control me-2 search-inp"
             type="search"
-            placeholder="Search destinations"
+            placeholder="Search hidden spots"
           />
           <button class="btn btn-search" type="submit">
             <i class="fa-solid fa-magnifying-glass"></i>Search
@@ -54,9 +54,9 @@
       </div>
 
       <div class="navbar-nav ms-auto">
-        <a class="nav-link" href="/listings/new">Airbnb your home</a>
+        <a class="nav-link" href="/listings/new">Share a hidden spot</a>
         <% if (!currUser) { %>
-        <a class="nav-link" href="/signup"><b>Sing up</b></a>
+        <a class="nav-link" href="/signup"><b>Sign up</b></a>
         <a class="nav-link" href="/login"><b>Login</b></a>
         <% } %> <% if (currUser) { %>
         <a class="nav-link" href="/logout"><b>Logout</b></a>

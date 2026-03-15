@@ -41,47 +41,47 @@
 <div id="filters">
   <div class="filter">
     <div><i class="fa-solid fa-fire"></i></div>
-    <p>Trending</p>
+    <p>Waterfalls</p>
   </div>
   <div class="filter">
     <div><i class="fa-solid fa-bed"></i></div>
-    <p>Rooms</p>
+    <p>Hidden Beaches</p>
   </div>
   <div class="filter">
     <div><i class="fa-solid fa-mountain-city"></i></div>
-    <p>Iconic cities</p>
+    <p>Viewpoints</p>
   </div>
   <div class="filter">
     <div><i class="fa-solid fa-mountain"></i></div>
-    <p>Mountains</p>
+    <p>Secret Trails</p>
   </div>
   <div class="filter">
     <div><i class="fa-brands fa-fort-awesome"></i></div>
-    <p>Castles</p>
+    <p>Abandoned Castles</p>
   </div>
   <div class="filter">
     <div><i class="fa-solid fa-person-swimming"></i></div>
-    <p>Amazing pools</p>
+    <p>Quiet Lakes</p>
   </div>
   <div class="filter">
     <div><i class="fa-solid fa-campground"></i></div>
-    <p>Camping</p>
+    <p>Camping Spots</p>
   </div>
   <div class="filter">
     <div><i class="fa-solid fa-cow"></i></div>
-    <p>Farms</p>
+    <p>Local Food Streets</p>
   </div>
   <div class="filter">
     <div><i class="fa-solid fa-snowflake"></i></div>
-    <p>Arctic</p>
+    <p>Sunset Points</p>
   </div>
   <div class="filter">
     <div><i class="fa-solid fa-igloo"></i></div>
-    <p>Domes</p>
+    <p>Hidden Villages</p>
   </div>
   <div class="filter">
     <div><i class="fa-solid fa-sailboat"></i></div>
-    <p>Boats</p>
+    <p>Island Escapes</p>
   </div>
 
   <div class="tax-toggle">
@@ -93,7 +93,7 @@
         id="flexSwitchChecckDefault"
       />
       <label class="form-check-label" for="flexSwitchCheckDefault"
-        >Display total after taxes</label
+        >Display estimated cost after taxes</label
       >
     </div>
   </div>
@@ -106,15 +106,15 @@
       <img
         src="<%= listing.image.url %>"
         class="card-img-top"
-        alt="listing-image"
+        alt="hidden-spot-image"
         style="height: 20rem"
       />
       <div class="card-img-overlay"></div>
       <div class="card-body">
         <p class="card-text">
           <b><%= listing.title %> </b><br />
-          &#x20B9; <%= listing.price.toLocaleString("en-IN") %> / night
-          <i class="tax-info">&nbsp; &nbsp; + 18% GST</i>
+          &#x20B9; <%= listing.price.toLocaleString("en-IN") %> estimated travel cost
+          <i class="tax-info">&nbsp; &nbsp; + 18% taxes & fees</i>
         </p>
       </div>
     </div>
